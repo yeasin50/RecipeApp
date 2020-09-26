@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resturant/Screens/tabs_screen.dart';
+import 'Screens/top_tabs_screen.dart';
 import './Screens/categories_screen.dart';
 import './Screens/category_meals_screen.dart';
 import './Screens/meals_details_screen.dart';
@@ -34,13 +36,13 @@ class MyApp extends StatelessWidget {
       // for nevigations
       initialRoute: '/',
       routes: {
-        '/': (ctx) => CategoriesScreen(),
+        '/': (ctx) => TabScreen(),
         CategoryMeals.routeName: (ctx) => CategoryMeals(),
         MealDetailsScreen.routeName: (ctx) => MealDetailsScreen(),
       },
       // this can bes used to handle complex structure
       onGenerateRoute: (settings) {
-        
+
       },
 
       // it calls before failer of creating page/screen
