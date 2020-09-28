@@ -1,19 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:resturant/models/meal.dart';
 import 'package:resturant/widget/main_drawer.dart';
 import './categories_screen.dart';
 import './favoriteScreen.dart';
 
 class TabScreen extends StatefulWidget {
+  List<Meal> _favoriteMeals;
+
+  TabScreen(this._favoriteMeals);
+
   @override
   _TabScreenState createState() => _TabScreenState();
 }
 
 class _TabScreenState extends State<TabScreen> {
-  final List<Map<String, dynamic>> _pages = [
-    {'page': CategoriesScreen(), 'title': 'Categories'},
-    {'page': FavoriteScreen(), 'title': 'Favorite'}
-  ];
+  List<Map<String, dynamic>> _pages;
   int _selectedPage = 0;
+
+/// we cannt get widget that's why we need to override initstate to get fav meals and pass through
+  @override
+  void initState() {
+    _pages =[
+    {'page': CategoriesScreen(), 'title': 'Categories'},
+    {'page': FavoriteScreen(widget._favoriteMeals), 'title': 'Favorite'}
+  ];
+    super.initState();
+  }
 
   void _selectPage(int index) {
     setState(() {

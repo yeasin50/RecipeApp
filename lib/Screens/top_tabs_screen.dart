@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:resturant/Screens/categories_screen.dart';
 import 'package:resturant/Screens/favoriteScreen.dart';
 
+///[ we not gonna use this dart file]
 class TopTabsScreen extends StatefulWidget {
   TopTabsScreen({Key key}) : super(key: key);
 
@@ -38,7 +39,7 @@ class _TabsScreenState extends State<TopTabsScreen> {
         body: TabBarView(children: [
           // order of tabs should match this order
           CategoriesScreen(),
-          FavoriteScreen(),
+          // FavoriteScreen(),
         ],),
       ),
     );
