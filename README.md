@@ -1,5 +1,6 @@
-# resturant
-
+# Recipe App Model
+## Main goal to underStang Nevigation and passing data, Next Upload will be on State Managment
+### Bad state management 
 A new Flutter project.
 
 ## Getting Started
