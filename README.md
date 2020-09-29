@@ -1,7 +1,7 @@
 # Recipe App Model
-### Main goal to underStang Nevigation and passing data, Next Upload will be on State Managment
+ Main goal to underStang Nevigation and passing data, Next Upload will be on State Managment
 ## Bad state management
-### Favorite List loaded from Cache, So after unchecking , if we just go back it will still visible being stateless widget and UnManagement State
+ Favorite List loaded from Cache, So after unchecking , if we just go back it will still visible being stateless widget and UnManagement State
 A new Flutter project.
 
 ## Getting Started
